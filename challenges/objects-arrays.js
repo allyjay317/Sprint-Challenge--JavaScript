@@ -90,7 +90,8 @@ graduates.forEach(s => contactInfo.push(`${s.first_name} ${s.email}`));
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
-const unisWithUni = universities.filter(s => s.includes("Uni"));
+//const unisWithUni = universities.filter(s => s.includes("Uni")); if only the university name was wanted
+const unisWithUni = graduates.filter(s => s.university.includes("Uni"));
 console.log(unisWithUni);
 
 
